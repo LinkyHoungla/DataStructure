@@ -4,7 +4,7 @@
 
 
 int main() {
-	LinkList L = createListHead();
+	/*LinkList L = createListHead();
 
 	foreachList(L);
 
@@ -17,7 +17,13 @@ int main() {
 
 	clearList(L);
 
-	foreachList(L);
+	foreachList(L);*/
+
+	int i = 1000;
+	float f = reinterpret_cast<float&>(i);
+	float f3 = static_cast<float>(i);
+	float f2 = (float)i;
+	printf("%d %f %f %f", i, f, f2, f3);
 
 	return 0;
 }
